@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include "callback.h"
-/* #include "_cgo_export.h" */
+/* #include "callback.h" */
+#include "_cgo_export.h"
 
 void myCallback() {
   puts("C: myCallback");
-  /* iz(); */
+  iz();
 }
 
 void registerIt(fcallback callback) {
@@ -17,7 +17,7 @@ fcallback foo() {
   return myCallback;
 }
 
-int main() {
-  puts("C: main");
-  registerIt(foo());
-}
+/* int main() { */
+/*   puts("C: main"); */
+/*   registerIt(foo()); */
+/* } */
